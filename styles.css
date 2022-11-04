@@ -12,6 +12,11 @@ body {
   margin: auto;
 }
 
+.container-resp {
+  max-width: 90%;
+  margin: auto;
+}
+
 .row {
   display: flex;
 }
@@ -70,23 +75,16 @@ body {
 }
 
 textarea {
-  width: 93%;
+  width: 100%;
   resize: none;
   margin-top: 2rem;
+  margin-bottom: 10px;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
 }
 
-.test {
-  justify-content: flex-start;
-}
-
-.pad-left {
-  padding-left: 30px;
-}
-
-.flex-end {
-  justify-content: flex-end;
+.text-right {
+  text-align: end;
 }
