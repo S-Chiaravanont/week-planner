@@ -103,3 +103,26 @@ textarea {
 .day-box:hover {
   background-color: lightgray;
 }
+
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+thead {
+  background-color: darkgray;
+}
+
+.time-table {
+  width: 30%;
+  text-align: left;
+}
+
+.description-table {
+  width: 70%;
+  text-align: left;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: rgba(48, 47, 47, 0.264);
+}

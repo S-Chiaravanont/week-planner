@@ -13,21 +13,71 @@
         <h1 class="text-center">Weekly Planner</h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col-seventh day-box">Sunday</div>
-      <div class="col-seventh day-box">Monday</div>
-      <div class="col-seventh day-box">Tuesday</div>
-      <div class="col-seventh day-box">Wednesday</div>
-      <div class="col-seventh day-box">Thursday</div>
-      <div class="col-seventh day-box">Friday</div>
-      <div class="col-seventh day-box">Saturday</div>
+    <div class="row" id="dayBoxes">
+      <div class="col-seventh day-box" id="sunday">Sunday</div>
+      <div class="col-seventh day-box" id="monday">Monday</div>
+      <div class="col-seventh day-box" id="tuesday">Tuesday</div>
+      <div class="col-seventh day-box" id="wednesday">Wednesday</div>
+      <div class="col-seventh day-box" id="thursday">Thursday</div>
+      <div class="col-seventh day-box" id="friday">Friday</div>
+      <div class="col-seventh day-box" id="saturday">Saturday</div>
     </div>
     <div class="row">
       <div class="column-full display-flex justi-center">
         <button class="add-button" id="add-entry-button">Add Entry</button>
       </div>
     </div>
+    <div class="row">
+      <div class="column-full">
+        <h3 class="text-center">Scheduled Events for Monday</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column-full">
+        <table>
+          <thead>
+            <tr>
+              <th class="time-table">Time</th>
+              <th class="description-table">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
+
+
+  <!-- MODAL -->
   <div class="overlay vis-none">
     <div class="modal">
       <div class="text-center">
@@ -88,7 +138,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="data.js"></script>
   <script src="main.js"></script>

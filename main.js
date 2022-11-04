@@ -24,15 +24,42 @@ var $form = document.querySelector('form');
 
 function handleEntrySubmit(event) {
   event.preventDefault();
-  console.log($form.elements);
   hideModal();
   var day = $form.elements.day.value;
   var taskData = {};
   taskData.time = $form.elements.time.value;
   taskData.taskDescription = $form.elements.taskDescription.value;
-  console.log(taskData);
   data[day].push(taskData);
   $form.reset();
 }
 
 $form.addEventListener('submit', handleEntrySubmit);
+
+function renderTR(task) {
+  var $tdTime = document.createElement('td');
+  $tdTime.textContent = task.time;
+  var $tdDesc = document.createElement('td');
+  $tdDesc.textContent = task.taskDescription;
+  var $trTask = document.createElement('tr');
+  $trTask.appendChild($tdTime);
+  $trTask.appendChild($tdDesc);
+  return $trTask;
+}
+
+var $dayBoxes = document.querySelector('#dayBoxes');
+$dayBoxes.addEventListener('click', viewSwap);
+
+var $tbodyTable = document.querySelector('tbody');
+
+function viewSwap(event) {
+  if (event.target.getAttribute('id') === 'dayBoxes') {
+    return;
+  }
+  $tbodyTable.innerHTML = '';
+  var day = event.target.getAttribute('id');
+  for (var i = 0; i < data[day].length; i++) {
+    var $trTaskRendered = renderTR(data[day][i]);
+    $tbodyTable.appendChild($trTaskRendered);
+  }
+
+}
