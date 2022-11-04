@@ -1,3 +1,4 @@
+/* global data */
 var $addEntry = document.querySelector('#add-entry-button');
 $addEntry.addEventListener('click', showModal);
 
@@ -24,6 +25,12 @@ var $form = document.querySelector('form');
 function handleEntrySubmit(event) {
   event.preventDefault();
   console.log($form.elements);
+  hideModal();
+  var taskData = {};
+  taskData.time = $form.elements.time.value;
+  taskData.day = $form.elements.day.value;
+  taskData.taskDescription = $form.elements.taskDescription.value;
+  console.log(taskData);
 }
 
 $form.addEventListener('submit', handleEntrySubmit);
