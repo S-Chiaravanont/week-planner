@@ -70,7 +70,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  height: 40%;
+  height: 45%;
   background-color: white;
 }
 
@@ -87,4 +87,19 @@ textarea {
 
 .text-right {
   text-align: end;
+}
+
+.col-seventh {
+  flex-basis: calc(100% / 7);
+}
+
+.day-box {
+  border: 1px solid black;
+  padding: 30px 5px;
+  text-align: center;
+  margin: 0 20px 20px;
+}
+
+.day-box:hover {
+  background-color: lightgray;
 }

@@ -1,2 +1,10 @@
 /* exported data */
-var data = {};
+var data = {
+  monday: [],
+  tuesday: [],
+  wednesday: [],
+  thursday: [],
+  friday: [],
+  saturday: [],
+  sunday: []
+};
