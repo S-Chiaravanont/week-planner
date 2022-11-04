@@ -10,7 +10,6 @@ body {
 .container {
   max-width: 900px;
   margin: auto;
-  background-color: lightblue;
 }
 
 .row {
@@ -68,11 +67,26 @@ body {
   width: 50%;
   height: 40%;
   background-color: white;
-  text-align: center;
 }
 
 textarea {
-  width: 70%;
+  width: 93%;
   resize: none;
   margin-top: 2rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.test {
+  justify-content: flex-start;
+}
+
+.pad-left {
+  padding-left: 30px;
+}
+
+.flex-end {
+  justify-content: flex-end;
 }
