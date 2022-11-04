@@ -51,7 +51,7 @@ body {
   color: lightgoldenrodyellow;
 }
 
-.over-lay {
+.overlay {
   background-color: rgba(16, 7, 7, 0.602);
   position: absolute;
   width: 100%;
